@@ -36,8 +36,14 @@
 
         Console.WriteLine(o);
 
-        empty.Push(1); // bug here, incorrect push, need to figure how to replace null/empty value with new one
+        empty.Push(1); // bug here, incorrect push, need to figure how to replace null/empty value with new one - FIXED
         o.Copy(empty);
         Console.WriteLine(o);
+
+        ObjectsStorage<int> New = new ObjectsStorage<int>();
+        Console.WriteLine("new: " +New);
+        New.Push(969696420);
+        Console.WriteLine(New);
+        
     }
 }

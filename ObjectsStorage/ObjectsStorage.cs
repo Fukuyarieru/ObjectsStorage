@@ -38,6 +38,13 @@ public class ObjectsStorage<T>
             this.value = value;
             return;
         }
+        int Int=0;
+        if (this.next==null&&this.value.GetType() == Int.GetType())
+        {
+            this.value = value;
+            return;
+        }
+
         ObjectsStorage<T> temp = this;
         int index = 0;
         while (temp.next != null)
